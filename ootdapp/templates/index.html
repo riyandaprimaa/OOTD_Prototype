@@ -1,0 +1,546 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="{%static 'css/home.css'%}" />
+    <title>Homepage</title>
+  </head>
+  <body>
+    <nav class="navbar"></nav>
+    {% comment %}
+    <script src="{%static 'js/nav.js'%}"></script>
+    {% endcomment %}
+    <div class="nav">
+      <img src="{%static 'img/logo_dark.png' %}" class="brand-logo" alt="" />
+      <div class="nav-items">
+        <div class="search">
+          <input
+            type="text"
+            class="search-box"
+            placeholder="search brand, product"
+          />
+          <button class="search-btn">search</button>
+        </div>
+        <a href="signup/"><img src="{%static 'img/user.png' %}" alt="" /></a>
+        <a href="#"><img src="{%static 'img/cart.png' %}" alt="" /></a>
+      </div>
+    </div>
+    <ul class="links-container">
+      <li class="link-item">
+        <a href="" class="link">Home</a>
+      </li>
+      <li class="link-item">
+        <a href="product/" class="link">Product</a>
+      </li>
+      <li class="link-item"><a href="#/" class="link">Wardrobe</a></li>
+      <li class="link-item"><a href="#/" class="link">Avatar</a></li>
+      <li class="link-item"><a href="#/" class="link">Notification</a></li>
+    </ul>
+    <!-- hero section -->
+    <header class="hero-section">
+      <div class="content">
+        <img
+          src="{%static 'img/logo_light.png'%}"
+          width="200"
+          height="200"
+          class="logo"
+          alt=""
+        />
+        <p class="sub-heading">bring online fashion to life</p>
+      </div>
+    </header>
+    <section class="product">
+      <h2 class="product-category">best selling</h2>
+      <button class="pre-btn">
+        <img src="{%static 'img/arrow.png'%}" alt="" />
+      </button>
+      <button class="nxt-btn">
+        <img src="{%static 'img/arrow.png'%}" alt="" />
+      </button>
+      <div class="product-container">
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% off</span>
+            <img
+              src="{%static 'img/card1.png'%}"
+              class="product-thumb"
+              alt=""
+            />
+            <button class="card-btn">add to whislist</button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">brand</h2>
+            <p class="product-short-des">a short line about the cloth..</p>
+            <span class="price">Rp. 120.000</span
+            ><span class="actual-price">Rp. 240.000</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% off</span>
+            <img
+              src="{%static 'img/card2.png'%}"
+              class="product-thumb"
+              alt=""
+            />
+            <button class="card-btn">add to whislist</button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">brand</h2>
+            <p class="product-short-des">a short line about the cloth..</p>
+            <span class="price">Rp. 120.000</span
+            ><span class="actual-price">Rp. 240.000</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% off</span>
+            <img
+              src="{%static 'img/card3.png'%}"
+              class="product-thumb"
+              alt=""
+            />
+            <button class="card-btn">add to whislist</button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">brand</h2>
+            <p class="product-short-des">a short line about the cloth..</p>
+            <span class="price">Rp. 120.000</span
+            ><span class="actual-price">Rp. 240.000</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% off</span>
+            <img
+              src="{%static 'img/card4.png'%}"
+              class="product-thumb"
+              alt=""
+            />
+            <button class="card-btn">add to whislist</button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">brand</h2>
+            <p class="product-short-des">a short line about the cloth..</p>
+            <span class="price">Rp. 120.000</span
+            ><span class="actual-price">Rp. 240.000</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% off</span>
+            <img
+              src="{%static 'img/card5.png'%}"
+              class="product-thumb"
+              alt=""
+            />
+            <button class="card-btn">add to whislist</button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">brand</h2>
+            <p class="product-short-des">a short line about the cloth..</p>
+            <span class="price">Rp. 120.000</span
+            ><span class="actual-price">Rp. 240.000</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% off</span>
+            <img
+              src="{%static 'img/card6.png'%}"
+              class="product-thumb"
+              alt=""
+            />
+            <button class="card-btn">add to whislist</button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">brand</h2>
+            <p class="product-short-des">a short line about the cloth..</p>
+            <span class="price">Rp. 120.000</span
+            ><span class="actual-price">Rp. 240.000</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% off</span>
+            <img
+              src="{%static 'img/card7.png'%}"
+              class="product-thumb"
+              alt=""
+            />
+            <button class="card-btn">add to whislist</button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">brand</h2>
+            <p class="product-short-des">a short line about the cloth..</p>
+            <span class="price">Rp. 120.000</span
+            ><span class="actual-price">Rp. 240.000</span>
+          </div>
+        </div>
+        +7 more cards
+      </div>
+    </section>
+    <!-- <script src="js/home.js"></script> -->
+
+    <!-- collections -->
+    <section class="collection-container">
+      <a href="#" class="collection">
+        <img src="{%static 'img/women-collection'%}.png" alt="" />
+        <p class="collection-title">
+          women <br />
+          apparels
+        </p>
+      </a>
+      <a href="#" class="collection">
+        <img src="{%static 'img/men-collection'%}.png" alt="" />
+        <p class="collection-title">
+          men <br />
+          apparels
+        </p>
+      </a>
+      <a href="#" class="collection">
+        <img src="{%static 'img/accessories-collection'%}.png" alt="" />
+        <p class="collection-title">accessories</p>
+      </a>
+    </section>
+
+    <!-- card-container -->
+    <section class="product">
+      <h2 class="product-category">Shirts</h2>
+      <button class="pre-btn">
+        <img src="{%static 'img/arrow.png'%}" alt="" />
+      </button>
+      <button class="nxt-btn">
+        <img src="{%static 'img/arrow.png'%}" alt="" />
+      </button>
+      <div class="product-container">
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% off</span>
+            <img
+              src="{%static 'img/card1.png'%}"
+              class="product-thumb"
+              alt=""
+            />
+            <button class="card-btn">add to whislist</button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">brand</h2>
+            <p class="product-short-des">a short line about the cloth..</p>
+            <span class="price">Rp. 120.000</span
+            ><span class="actual-price">Rp. 240.000</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% off</span>
+            <img
+              src="{%static 'img/card2.png'%}"
+              class="product-thumb"
+              alt=""
+            />
+            <button class="card-btn">add to whislist</button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">brand</h2>
+            <p class="product-short-des">a short line about the cloth..</p>
+            <span class="price">Rp. 120.000</span
+            ><span class="actual-price">Rp. 240.000</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% off</span>
+            <img
+              src="{%static 'img/card3.png'%}"
+              class="product-thumb"
+              alt=""
+            />
+            <button class="card-btn">add to whislist</button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">brand</h2>
+            <p class="product-short-des">a short line about the cloth..</p>
+            <span class="price">Rp. 120.000</span
+            ><span class="actual-price">Rp. 240.000</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% off</span>
+            <img
+              src="{%static 'img/card4.png'%}"
+              class="product-thumb"
+              alt=""
+            />
+            <button class="card-btn">add to whislist</button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">brand</h2>
+            <p class="product-short-des">a short line about the cloth..</p>
+            <span class="price">Rp. 120.000</span
+            ><span class="actual-price">Rp. 240.000</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% off</span>
+            <img
+              src="{%static 'img/card5.png'%}"
+              class="product-thumb"
+              alt=""
+            />
+            <button class="card-btn">add to whislist</button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">brand</h2>
+            <p class="product-short-des">a short line about the cloth..</p>
+            <span class="price">Rp. 120.000</span
+            ><span class="actual-price">Rp. 240.000</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% off</span>
+            <img
+              src="{%static 'img/card6.png'%}"
+              class="product-thumb"
+              alt=""
+            />
+            <button class="card-btn">add to whislist</button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">brand</h2>
+            <p class="product-short-des">a short line about the cloth..</p>
+            <span class="price">Rp. 120.000</span
+            ><span class="actual-price">Rp. 240.000</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% off</span>
+            <img
+              src="{%static 'img/card7.png'%}"
+              class="product-thumb"
+              alt=""
+            />
+            <button class="card-btn">add to whislist</button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">brand</h2>
+            <p class="product-short-des">a short line about the cloth..</p>
+            <span class="price">Rp. 120.000</span
+            ><span class="actual-price">Rp. 240.000</span>
+          </div>
+        </div>
+        +7 more cards
+      </div>
+    </section>
+    <!-- <script src="js/home.js"></script> -->
+
+    <!-- card-container -->
+    <section class="product">
+      <h2 class="product-category">Shoes</h2>
+      <button class="pre-btn">
+        <img src="{%static 'img/arrow.png'%}" alt="" />
+      </button>
+      <button class="nxt-btn">
+        <img src="{%static 'img/arrow.png'%}" alt="" />
+      </button>
+      <div class="product-container">
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% off</span>
+            <img
+              src="{%static 'img/card9.png'%}"
+              class="product-thumb"
+              alt=""
+            />
+            <button class="card-btn">add to whislist</button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">brand</h2>
+            <p class="product-short-des">a short line about the cloth..</p>
+            <span class="price">Rp. 120.000</span
+            ><span class="actual-price">Rp. 240.000</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% off</span>
+            <img
+              src="{%static 'img/card10.png'%}"
+              class="product-thumb"
+              alt=""
+            />
+            <button class="card-btn">add to whislist</button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">brand</h2>
+            <p class="product-short-des">a short line about the cloth..</p>
+            <span class="price">Rp. 120.000</span
+            ><span class="actual-price">Rp. 240.000</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% off</span>
+            <img
+              src="{%static 'img/card11.png'%}"
+              class="product-thumb"
+              alt=""
+            />
+            <button class="card-btn">add to whislist</button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">brand</h2>
+            <p class="product-short-des">a short line about the cloth..</p>
+            <span class="price">Rp. 120.000</span
+            ><span class="actual-price">Rp. 240.000</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% off</span>
+            <img
+              src="{%static 'img/card12.png'%}"
+              class="product-thumb"
+              alt=""
+            />
+            <button class="card-btn">add to whislist</button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">brand</h2>
+            <p class="product-short-des">a short line about the cloth..</p>
+            <span class="price">Rp. 120.000</span
+            ><span class="actual-price">Rp. 240.000</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% off</span>
+            <img
+              src="{%static 'img/card13.png'%}"
+              class="product-thumb"
+              alt=""
+            />
+            <button class="card-btn">add to whislist</button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">brand</h2>
+            <p class="product-short-des">a short line about the cloth..</p>
+            <span class="price">Rp. 120.000</span
+            ><span class="actual-price">Rp. 240.000</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% off</span>
+            <img
+              src="{%static 'img/card14.png'%}"
+              class="product-thumb"
+              alt=""
+            />
+            <button class="card-btn">add to whislist</button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">brand</h2>
+            <p class="product-short-des">a short line about the cloth..</p>
+            <span class="price">Rp. 120.000</span
+            ><span class="actual-price">Rp. 240.000</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% off</span>
+            <img
+              src="{%static 'img/card15.png'%}"
+              class="product-thumb"
+              alt=""
+            />
+            <button class="card-btn">add to whislist</button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">brand</h2>
+            <p class="product-short-des">a short line about the cloth..</p>
+            <span class="price">Rp. 120.000</span
+            ><span class="actual-price">Rp. 240.000</span>
+          </div>
+        </div>
+        +7 more cards
+      </div>
+    </section>
+    <script src="{%static 'js/home.js'%}"></script>
+
+    <footer></footer>
+
+    {% comment %}
+    <script src="{%static 'js/footer.js'%}"></script>
+    {% endcomment %}
+    <div class="footer">
+      <div class="footer-content">
+        <img src="{%static 'img/logo_light.png' %}" class="logo" alt="" />
+        <div class="footer-ul-container">
+          <ul class="category">
+            <li class="category-title">men</li>
+            <li><a href="#" class="footer-link">t-shirts</a></li>
+            <li><a href="#" class="footer-link">sweatshirts</a></li>
+            <li><a href="#" class="footer-link">shirts</a></li>
+            <li><a href="#" class="footer-link">jeans</a></li>
+            <li><a href="#" class="footer-link">trousers</a></li>
+            <li><a href="#" class="footer-link">shoes</a></li>
+            <li><a href="#" class="footer-link">casuals</a></li>
+            <li><a href="#" class="footer-link">formals</a></li>
+            <li><a href="#" class="footer-link">sports</a></li>
+            <li><a href="#" class="footer-link">watch</a></li>
+          </ul>
+          <ul class="category">
+            <li class="category-title">women</li>
+            <li><a href="#" class="footer-link">t-shirts</a></li>
+            <li><a href="#" class="footer-link">sweatshirts</a></li>
+            <li><a href="#" class="footer-link">shirts</a></li>
+            <li><a href="#" class="footer-link">jeans</a></li>
+            <li><a href="#" class="footer-link">trousers</a></li>
+            <li><a href="#" class="footer-link">shoes</a></li>
+            <li><a href="#" class="footer-link">casuals</a></li>
+            <li><a href="#" class="footer-link">formals</a></li>
+            <li><a href="#" class="footer-link">sports</a></li>
+            <li><a href="#" class="footer-link">watch</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <p class="footer-title">About Us</p>
+    <p class="info">Welcome To OOTD</p>
+    <p class="info">
+      OOTD merupakan website E-Commerce khusus bagi kalian pecinta fashion. OOTD
+      dibuat oleh sekumpulan mahasiswa dari Politeknik Elektronika Negeri
+      Surabaya yang menempuh jenjang pendidikan sarjana terapan prodi Sains Data
+      Terapan. Kami memiliki misi untuk memberikan platform yang memudahkan
+      customer khususnya pecinta fashion untuk memilih outfit yang paling sesuai
+      dengan mereka. Dengan menerapkan teknologi Artificial Intelligence kami
+      dapat memberikan fitur yang tidak hanya memudahkan namun juga membuat
+      sebuah gebrakan baru dalam dunia e-commerce. Tidak hanya itu kami juga
+      berkolaborasi dengan brand-brand ternama untuk memberikan pilihan produk
+      terbaik yang ada. Keinginan kami untuk terus berkembang dan menerapkan
+      teknologi terbaru akan selalu menjadi tekad kami sebagai tim untuk terus
+      mengembangkan ide-ide terbaru dan solutif.
+    </p>
+    <p class="info">Support E-mails - ootdsupport@gmail.com</p>
+    <p class="info">Telephone - +6282347865342</p>
+    <div class="footer-social-container">
+      <div>
+        <a href="#" class="social-link">terms & services</a>
+        <a href="#" class="social-link">privacy page</a>
+      </div>
+      <div>
+        <a href="#" class="social-link">instagram</a>
+        <a href="#" class="social-link">facebook</a>
+        <a href="#" class="social-link">twitter</a>
+      </div>
+    </div>
+    <p class="footer-credit">Clothing, Best apparels online store</p>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{%static 'css/login-style.css'%}" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <title>Register</title>
+  </head>
+  <body>
+    <div class="container">
+      {% if messages %}
+        {% for message in messages %}
+          {{ message }}
+        {% endfor %}
+      {% endif %}
+      <div class="content">
+        <div class="logo">
+          <img src="{%static 'img/logo_dark.png'%}" alt="" />
+        </div>
+        <div class="image"></div>
+        <div class="text">
+          Start for free & get <br />
+          attractive offers today !
+        </div>
+      </div>
+      <form method="POST">
+        {% csrf_token %}
+        <div class="social">
+          <div class="title">Log In</div>
+        <div>
+          <label for="username">Username</label>
+          <i class="far fa-envelope"></i>
+          <input
+            type="username"
+            name="username"
+            id="username"
+            placeholder="Username here"
+          />
+          <i class="fas fa-exclamation-circle failure-icon"></i>
+          <i class="far fa-check-circle success-icon"></i>
+          <div class="error"></div>
+        </div>
+        <div>
+          <label for="password">Password</label>
+          <i class="fas fa-lock"></i>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password here"
+          />
+          <i class="fas fa-exclamation-circle failure-icon"></i>
+          <i class="far fa-check-circle success-icon"></i>
+          <div class="error"></div>
+        </div>
+
+        <button type="submit" id="submit">Log In</button>
+      </form>
+    </div>
+  </body>
+  {% comment %} <script src="{%static 'js/login.js'%}"></script> {% endcomment %}
+</html>
